@@ -14,16 +14,16 @@
 	<div id="mainbox" class="mainbox">
 		<div id="box" class="box">
 			<div class="box1">
-				<span class="span1"><b><p id="output"></p> </array></b></span>
-				<span class="span2"><b>Kamya</b></span>
-				<span class="span3"><b>Jahnvi</b></span>
-				<span class="span4"><b>Himanshi</b></span>
+				<span class="span1"><b><p id="name1"></p> </array></b></span>
+				<span class="span2"><b><p id="name2"></p> </b></span>
+				<span class="span3"><b><p id="name3"></p> </b></span>
+				<span class="span4"><b><p id="name4"></p> </b></span>
 			</div>
 			<div class="box2">
-				<span class="span1"><b>Ishita</b></span>
-				<span class="span2"><b>Jyoti</b></span>
-				<span class="span3"><b>Jai Shree</b></span>
-				<span class="span4"><b>Harshita</b></span>
+				<span class="span1"><b><p id="name5"></p> </b></span>
+				<span class="span2"><b><p id="name6"></p> </b></span>
+				<span class="span3"><b><p id="name7"></p> </b></span>
+				<span class="span4"><b><p id="name8"></p> </b></span>
 			</div>
 		</div>
 
@@ -31,21 +31,46 @@
 	</div>
 
 
-    <script>
-        window.onload = function(){
+    //<script>
+        //window.onload = function(){
             //var name = prompt("What's your name?");
             //document.getElementById('output').innerHTML = name;
-            const cars = ["Saab", "Volvo", "BMW"];
-            let car = cars[0];
-            document.getElementById('output').innerHTML = car;
-        };
+            //const cars = ["Saab", "Volvo", "BMW"];
+            //let car = cars[0];
+            //document.getElementById('output').innerHTML = car;
+        
         </script>
 
+
+//<script>
+  window.onload = function(){
+      var name1 = prompt("Enter the first name");
+      document.getElementById('name1').innerHTML = name1;
+      var name2 = prompt("Enter the second name");
+      document.getElementById('name2').innerHTML = name2;
+      var name3 = prompt("Enter the third name");
+      document.getElementById('name3').innerHTML = name3;
+      var name4 = prompt("Enter the fourth name");
+      document.getElementById('name4').innerHTML = name4;
+      var name5 = prompt("Enter the fifth name");
+      document.getElementById('name5').innerHTML = name5;
+      var name6 = prompt("Enter the sixth name");
+      document.getElementById('name6').innerHTML = name6;
+      var name7 = prompt("Enter the seventh name");
+      document.getElementById('name7').innerHTML = name7;
+      var name8 = prompt("Enter the eigth name");
+      document.getElementById('name8').innerHTML = name8;
   
-<input type="text" id="text1"></input>
+  
+  };
+  </script>
+
+
+  
+<! --<input type="text" id="text1"></input>
 <input type="button" id="button1" value="Add" onclick="add_element_to_array();"></input>
 <input type="button" id="button2" value="Display" onclick="display_array();"></input>
-<div id="Result"></div> 
+<div id="Result"></div>
 
 <script type="text/javascript">
 
@@ -69,7 +94,7 @@ function display_array()
      e += "Element " + y + " = " + array[y] + "<br/>";
    }
    document.getElementById("Result").innerHTML = e;
-}
+}-->
 
         
     </script>
