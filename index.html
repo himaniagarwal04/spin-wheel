@@ -14,7 +14,7 @@
 	<div id="mainbox" class="mainbox">
 		<div id="box" class="box">
 			<div class="box1">
-				<span class="span1"><b>Himani</b></span>
+				<span class="span1"><b><p id="output"></p> </array></b></span>
 				<span class="span2"><b>Kamya</b></span>
 				<span class="span3"><b>Jahnvi</b></span>
 				<span class="span4"><b>Himanshi</b></span>
@@ -29,6 +29,49 @@
 
 		<button class="spin" onclick="myfunction()">SPIN</button>
 	</div>
+
+
+    <script>
+        window.onload = function(){
+            var name = prompt("What's your name?");
+            document.getElementById('output').innerHTML = name;
+        };
+        </script>
+
+  
+<input type="text" id="text1"></input>
+<input type="button" id="button1" value="Add" onclick="add_element_to_array();"></input>
+<input type="button" id="button2" value="Display" onclick="display_array();"></input>
+<div id="Result"></div> 
+
+<script type="text/javascript">
+
+var x = 0;
+var array = Array();
+
+function add_element_to_array()
+{
+ array[x] = document.getElementById("text1").value;
+ alert("Element: " + array[x] + " Added at index " + x);
+ x++;
+ document.getElementById("text1").value = "";
+}
+
+function display_array()
+{
+   var e = "<hr/>";   
+    
+   for (var y=0; y<array.length; y++)
+   {
+     e += "Element " + y + " = " + array[y] + "<br/>";
+   }
+   document.getElementById("Result").innerHTML = e;
+}
+
+        
+    </script>
+    
+
 
   
   <script src="script.js"></script>
