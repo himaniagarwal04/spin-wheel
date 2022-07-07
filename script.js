@@ -14,3 +14,4 @@ function myfunction(){
 		element.classList.add('animate');
 	}, 5000); //5000 = 5 second
 }
+
